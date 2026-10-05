@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tirta Athaya Saiful | Portofolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Background Stars Canvas & Cursor Glow -->
+  <canvas id="bg-canvas"></canvas>
+  <div id="cursor-glow"></div>
+
+  <!-- 1. LIGHTNING LOADER SCREEN -->
+  <div id="loader">
+    <canvas id="loader-canvas"></canvas>
+    <div class="lightning-flash"></div>
+    <div class="loader-box">
+      <h2>Welcome To My<br><span>Portofolio Website</span></h2>
+      <div class="loader-bar-container">
+        <div class="loader-bar" id="loader-bar"></div>
+      </div>
+      <div class="loader-text">
+        <span>Loading</span>
+        <span id="loader-percent">0%</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- FLOATING NAVBAR -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="logo-avatar">
+        <i class="fas fa-ghost"></i>
+      </div>
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="#hero" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- 2. HERO SECTION -->
+  <section id="hero" class="section hero-section">
+    <div class="container hero-grid">
+      <div class="hero-left reveal">
+        <h1 class="hero-title">Turning Ideas<br><span>Into Reality</span></h1>
+        <p class="hero-subtitle">IT Edu Student</p>
+        <p class="hero-desc">
+          Dimulai dari rasa penasaran, berkembang menjadi passion. Aku membangun pengalaman digital yang tidak hanya terlihat bagus, tapi juga terasa bermakna bagi penggunanya.
+        </p>
+        <div class="hero-actions">
+          <a href="#portfolio" class="btn btn-primary">Certificates <i class="fas fa-external-link-alt"></i></a>
+          <a href="#contact" class="btn btn-secondary">Contact Me <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="social-links">
+          <span>FIND ME</span>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-github"></i></a>
+        </div>
+      </div>
+
+      <!-- Spotify Player Card -->
+      <div class="hero-right reveal">
+        <div class="glass-card spotify-card">
+          <div class="card-header">
+            <h3>Daily Rotation</h3>
+            <p>A curated collection of tracks that keep me in the zone and inspired while coding.</p>
+          </div>
+          <div class="spotify-player">
+            <img src="https://i.ibb.co.com/4n8jgJNW/Cintailah-Cinta-Formation-Dewa-19.jpg" alt="Album Cover" class="album-art">
+            <div class="player-info">
+              <h4>DEWA 19</h4>
+              <p>tirtaathaya</p>
+              <a href="#" class="btn-spotify"><i class="fab fa-spotify"></i> Save on Spotify</a>
+            </div>
+          </div>
+          <ul class="track-list">
+            <li class="track-item active">
+              <span class="track-num">1</span>
+              <div class="track-details">
+                <span class="track-title">Terbuang Dalam Waktu</span>
+                <span class="track-artist">Barasuara</span>
+              </div>
+              <span class="track-time">04:41</span>
+            </li>
+            <li class="track-item">
+              <span class="track-num">2</span>
+              <div class="track-details">
+                <span class="track-title">Raindance (feat. Tems)</span>
+                <span class="track-artist">Dave, Tems</span>
+              </div>
+              <span class="track-time">03:39</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. ABOUT ME SECTION -->
+  <section id="about" class="section about-section">
+    <div class="container">
+      <h2 class="section-title reveal">About Me</h2>
+      <div class="about-grid">
+        <div class="about-text-side reveal">
+          <h1 class="hero-title">Hi, I'm<br><span>Tirta Athaya Saiful</span></h1>
+          <a href="#" class="btn btn-primary"><i class="fas fa-file-alt"></i> View Resume</a>
+        </div>
+
+        <div class="about-spidey-card reveal" id="avatar-container">
+          <img src="https://i.ibb.co.com/dJb2Cm9s/spiderman.png" alt="Spider-Man" class="spidey-img img-under">
+          <img src="https://i.ibb.co.com/b5F4gFQT/tirta-removebg-preview-removebg-preview.png" alt="Tirta Athaya Saiful" class="spidey-img img-top" id="top-img">
+        </div>
+
+        <div class="about-desc-side reveal">
+          <p>
+            Sebagai mahasiswa Fakultas Ilmu Komputer Universitas Bina Bangsa Getsempena, Aku berfokus pada pengembangan teknologi yang tidak hanya fungsional, tetapi juga menghadirkan pengalaman digital yang menarik dan berdampak.
+          </p>
+          <a href="#portfolio" class="btn btn-secondary">&lt;&gt; View Certificates</a>
+        </div>
+      </div>
+
+      <!-- Edu & Exp Grid -->
+      <div class="edu-exp-grid reveal">
+        <div class="glass-card">
+          <h3 class="card-title"><i class="fas fa-graduation-cap"></i> Education</h3>
+          <div class="timeline-item-with-logo">
+            <div class="item-logo">
+              <img src="https://i.ibb.co.com/hRfqKxjN/LOGO-UBBG-removebg-preview.png" alt="UBBG Logo">
+            </div>
+            <div class="item-details">
+              <h4>Universitas Bina Bangsa Getsempena</h4>
+              <p>IT Edu | Faculty of Computer Science</p>
+              <span class="timeline-date">2025 - Present</span>
+            </div>
+          </div>
+          <div class="timeline-item-with-logo">
+            <div class="item-logo">
+              <img src="https://i.ibb.co.com/9Hz61V3d/Picture1-removebg-preview.png"   alt="SMKN 1 Labuhan Haji Logo">
+            </div>
+            <div class="item-details">
+              <h4>SMKN 1 LABUHANHAJI</h4>
+              <p>Teknik Komputer dan Jaringan</p>
+              <span class="timeline-date">2021-2024</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="glass-card">
+          <h3 class="card-title"><i class="fa-solid fa-briefcase"></i> Experience</h3>
+          <div class="timeline-item">
+            <h4>Hology 9.0</h4>
+            <p>Staff Technology | UI/UX Designer</p>
+            <span class="timeline-date">2026</span>
+          </div>
+          <div class="timeline-item">
+            <h4>Lomba Kompetensi Siswa (LKS) SMK</h4>
+            <p>Provincial Competitor - IT Network Systems Administration (Aceh)</p>
+            <span class="timeline-date">2024</span>
+          </div>
+          <div class="timeline-item">
+            <h4>Poster Design Competition</h4>
+            <p>Graphic & Visual Designer</p>
+            <span class="timeline-date">2023</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="stats-grid reveal">
+        <div class="stat-card">
+          <div class="stat-header">
+            <span class="stat-num">5</span>
+            <i class="fas fa-certificate"></i>
+          </div>
+          <h4>Certificates</h4>
+          <p>Skills validated</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. PORTFOLIO SECTION (CERTIFICATES) -->
+  <section id="portfolio" class="section portfolio-section">
+    <div class="container">
+      <h2 class="section-title reveal">Certificates</h2>
+      <div class="portfolio-content reveal">
+        <div class="cards-grid">
+          
+          <div class="cards-grid">
+  
+  <!-- Sertifikat 1: LKS IT Network (Sertifikat Utama Kamu) -->
+  <div class="project-card">
+    <div class="card-img-holder">
+      <img src="https://i.ibb.co.com/99PW2xDJ/Cam-Scanner-21-10-2025-20-45.jpg" alt="LKS IT Network Systems Administration">
+    </div>
+    <div class="card-body">
+      <h3>LKS IT Network Systems Administration</h3>
+      <p>Peserta Lomba Kompetensi Siswa (LKS) Tingkat Provinsi Aceh bidang IT Network Systems Administration.</p>
+      <button class="btn-link view-cert-btn" 
+              data-img="https://i.ibb.co.com/99PW2xDJ/Cam-Scanner-21-10-2025-20-45.jpg" 
+              data-title="LKS IT Network Systems Administration - Provinsi Aceh (2024)">
+        Lihat Sertifikat &rarr;
+      </button>
+    </div>
+  </div>
+
+  <!-- Sertifikat 2: Madani Festival 2023 -->
+  <div class="project-card">
+    <div class="card-img-holder">
+      <img src="https://i.ibb.co.com/wF0pszFr/Screenshot-2026-10-03-044717.png" alt="Juara 2 Desain Poster Madani Festival">
+    </div>
+    <div class="card-body">
+      <h3>Juara 2 Desain Poster - SMA</h3>
+      <p>Juara 2 Lomba Desain Poster pada Madani Festival 2023 ("The Miracle in Impossibility").</p>
+      <button class="btn-link view-cert-btn" 
+              data-img="https://i.ibb.co.com/wF0pszFr/Screenshot-2026-10-03-044717.png" 
+              data-title="Juara 2 Desain Poster - Madani Festival 2023">
+        Lihat Sertifikat &rarr;
+      </button>
+    </div>
+  </div>
+
+  <!-- Sertifikat 3: FLS2N 2021 -->
+  <div class="project-card">
+    <div class="card-img-holder">
+      <img src="https://i.ibb.co.com/Rp9Wj2Cb/Screenshot-2026-10-03-044734.png"  alt="Juara 3 Desain Poster FLS2N">
+    </div>
+    <div class="card-body">
+      <h3>Juara 3 Desain Poster FLS2N</h3>
+      <p>Juara 3 Lomba Desain Poster FLS2N SMP Tingkat Kabupaten Aceh Selatan Tahun 2021.</p>
+      <button class="btn-link view-cert-btn" 
+              data-img="https://i.ibb.co.com/Rp9Wj2Cb/Screenshot-2026-10-03-044734.png" 
+              data-title="Juara 3 Desain Poster - FLS2N Kabupaten Aceh Selatan 2021">
+        Lihat Sertifikat &rarr;
+      </button>
+    </div>
+  </div>
+
+  <!-- Sertifikat 4: OSN Matematika 2017 -->
+  <div class="project-card">
+    <div class="card-img-holder">
+      <img src="https://i.ibb.co.com/TMH3qpW4/Screenshot-2026-10-03-044659.png"  alt="OSN Matematika SD">
+    </div>
+    <div class="card-body">
+      <h3>OSN Matematika SD</h3>
+      <p>Peserta Olimpiade Sains Nasional (OSN) Tingkat SD Bidang Matematika Wilayah I Aceh Selatan (2017).</p>
+      <button class="btn-link view-cert-btn" 
+              data-img="https://i.ibb.co.com/TMH3qpW4/Screenshot-2026-10-03-044659.png" 
+              data-title="Peserta OSN Matematika SD - Wilayah I Aceh Selatan (2017)">
+        Lihat Sertifikat &rarr;
+      </button>
+    </div>
+  </div>
+
+  <!-- Sertifikat 5: OSN IPA 2018 -->
+  <div class="project-card">
+    <div class="card-img-holder">
+      <img src="https://i.ibb.co.com/NnstzDth/Screenshot-2026-10-03-044758.png"  alt="OSN IPA SD">
+    </div>
+    <div class="card-body">
+      <h3>OSN IPA SD</h3>
+      <p>Peserta Olimpiade Sains Nasional (OSN) Tingkat SD Bidang Ilmu Pengatahuan Alam (IPA) Wilayah I Aceh Selatan (2018).</p>
+      <button class="btn-link view-cert-btn" 
+              data-img="https://i.ibb.co.com/NnstzDth/Screenshot-2026-10-03-044758.png"  
+              data-title="Peserta OSN IPA SD - Wilayah I Aceh Selatan (2018)">
+        Lihat Sertifikat &rarr;
+      </button>
+    </div>
+  </div>
+
+</div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. CONTACT & GUESTBOOK SECTION -->
+  <section id="contact" class="section contact-section">
+    <div class="container">
+      <h2 class="section-title reveal">Hubungi Saya</h2>
+      <div class="contact-grid">
+        <div class="glass-card reveal">
+          <h3>Ada yang mau didiskusikan?</h3>
+          <p class="card-sub">Langsung kirim pesan aja ya..!</p>
+          <form id="contact-form">
+            <div class="form-group">
+              <input type="text" placeholder="Nama Anda" required>
+            </div>
+            <div class="form-group">
+              <input type="email" placeholder="Email Anda" required>
+            </div>
+            <div class="form-group">
+              <textarea placeholder="Pesan Anda" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full"><i class="fas fa-paper-plane"></i> Kirim Pesan</button>
+          </form>
+        </div>
+
+        <div class="glass-card reveal">
+          <div class="comments-header">
+            <h3><i class="far fa-comments"></i> Komentar (<span id="comment-count">1</span>)</h3>
+          </div>
+          <form id="comment-form" class="comment-form">
+            <input type="text" id="comment-name" placeholder="Masukkan nama kamu" required>
+            <textarea id="comment-text" placeholder="Tulis komentar kamu di sini..." rows="3" required></textarea>
+            <button type="submit" class="btn btn-primary btn-sm"><i class="fas fa-paper-plane"></i> Kirim Komentar</button>
+          </form>
+          <div class="comments-list" id="comments-list">
+            <div class="comment-item">
+              <div class="comment-avatar"><i class="fas fa-user-circle"></i></div>
+              <div class="comment-body">
+                <div class="comment-meta">
+                  <strong>User Guest</strong>
+                  <span>7h ago</span>
+                </div>
+                <p>Keren banget bro websitenya!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MODAL POPUP PREVIEW SERTIFIKAT -->
+  <div id="cert-modal" class="cert-modal">
+    <span class="cert-modal-close">&times;</span>
+    <img class="cert-modal-content" id="cert-modal-img" alt="Certificate Preview">
+    <div id="cert-modal-caption"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
